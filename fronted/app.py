@@ -304,13 +304,3 @@ with tab2:
     except Exception as e:
         st.error(f"🚨 Erreur : {e}")
 
-
-    try:
-        animation = load_lottiefile("credit.json")
-        st_lottie(animation, speed=1, height=200)
-    except FileNotFoundError:
-        st.warning("⚠️ Fichier credit.json introuvable.")
-    except Exception as e:
-        st.warning(f"⚠️ Erreur lors du chargement de l'animation : {e}")
-
-
